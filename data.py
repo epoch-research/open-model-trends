@@ -23,3 +23,7 @@ def load_hardware_df():
 
 def load_price_df():
     return pd.read_csv('data/Hardware prices.csv')
+
+
+def load_benchmark_df():
+    return pd.read_csv('data/Benchmark data-Grid view.csv')
