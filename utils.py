@@ -4,7 +4,7 @@ from scipy import stats
 
 
 def datetime_to_float_year(datetimes):
-    date_floats = datetimes.dt.year + (datetimes.dt.month-1) / 12 + (datetimes.dt.day-1) / 365
+    date_floats = datetimes.dt.year + (datetimes.dt.month-1) / 12 + (datetimes.dt.day-1) / 365.242374
     return date_floats
 
 
