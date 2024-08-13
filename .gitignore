@@ -6,3 +6,5 @@ __pycache__/
 
 notes.md
 All ML Systems - full view - *.csv
+
+.ipynb_checkpoints/
