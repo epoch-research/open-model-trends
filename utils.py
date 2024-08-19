@@ -96,3 +96,12 @@ def print_median_and_ci(samples, ci=[5, 95]):
 
     ci_range = int(ci[1] - ci[0])
     print(f"Median: {formatted_median} [{ci_range}% CI: {formatted_low}, {formatted_high}]")
+
+
+def negative_log_error(x):
+    return -np.log(1 - x)
+
+
+def nle_column(df, col):
+    df[f"{col}_nle"] = df[col].apply(negative_log_error)
+    return df
