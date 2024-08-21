@@ -24,6 +24,14 @@ def fit_ols_regression(data, features, target, logy=False):
 
 def get_predictions(model, data, features):
     X = data[features].to_numpy()
+    if X.size == 0:
+        return np.array([])
+    X = sm.add_constant(X, has_constant='add')
+    return model.predict(X)
+
+
+def get_prediction_df(model, data, features):
+    X = data[features].to_numpy()
     X = sm.add_constant(X)
     pred_df = model.get_prediction(X).summary_frame()
     pred_df[features] = data[features]
