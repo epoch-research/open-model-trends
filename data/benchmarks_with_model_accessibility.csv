@@ -2,12 +2,12 @@ System,Model size (parameters),Active Parameters,Dataset size,Date,Open/Closed,T
 Random chance,,,,,,1.00E+20,,0.25,0.25,y,0.25,0.25,0,0,0,0,,,,,,,0,
 BLOOM-176B,1.76E+11,"176,000,000,000",3.90E+11,2022-11-09,Open,4.12E+23,,0.4491,,,0.3913,,,,,,,,,,,,0,
 BloombergGPT,50000000000,"50,000,000,000",7.08E+11,2023-03-30,Closed,2.12E+23,,0.4197,,,0.3918,,,,,,,,,,,,0,
-Camelidae-8x34B,,,,2024-01-05,Open,,,,,,0.756,,,,,,,,,,,,,
+Camelidae-8x34B,,,,2024-01-05,Open,,,,,,0.756,,,,,,,,,,,,0,
 ChatGLM-6B,6.00E+09,"6,000,000,000",,2023-03-01,Open,,,0.1873,,,,,,,,880,,,,,,,0,
 ChatGLM2-12B-base,1.20E+10,"12,000,000,000",,2023-06-25,Open,,,0.3602,,,,,,,,,,,,,,,0,
 ChatGLM2-6B-base,6.00E+09,"6,000,000,000",,2023-06-25,Open,,,0.3368,,,,,,,,924,,,,,,,0,
 ChatGLM3-6B,6.00E+09,"6,000,000,000",,2023-10-27,Open,5.04E+22,,0.661,,,,,,,,955,,,,,,,0,
-Chinchilla 70B,,"70,000,000,000",,2022-03-29,Closed,5.76E+23,,,,,0.675,,,,,,,,,,,,,
+Chinchilla 70B,,"70,000,000,000",,2022-03-29,Closed,5.76E+23,,,,,0.675,,,,,,,,,,,,0,
 Claude 2,,,,2023-07-11,Closed,,,,,,0.785,,,,,1132,,,,,"Actually CoT, so probably an overestimate. HELM gives 73.5%.",,1,Claude 2.1 doesn't perform worse on GSM1k relative to GSM8k
 Claude 3 Opus,,,,2024-03-04,Closed,,,0.868,0.504,y,0.868,0.846,1060,0.847,0.9519,1248,20240229,,3-shot,,,20240620,1,Doesn't perform worse on GSM1k relative to GSM8k
 Claude 3 Sonnet,,,,2024-03-04,Closed,,,,0.404,y,0.79,,980,0.833,0.9328,1201,20240229,,,,,20240229,1,Doesn't perform worse on GSM1k relative to GSM8k
@@ -21,7 +21,7 @@ DBRX-Instruct,,"36,000,000,000",,2024-03-27,Open,2.60E+24,,0.485,0.34,unspecifie
 DeepSeek-67B,6.70E+10,"67,000,000,000",2.00E+12,2023-11-29,Open,8.04E+23,,,,,0.713,,,,,1076,chat,,,,,,-1,Performs worse on GSM1k relative to GSM8k
 DeepSeek-7B,7.00E+09,"7,000,000,000",2.00E+12,2023-11-29,Open,8.40E+22,,,,,0.482,,,,,,,,,,,,0,
 DeepSeek-V2,2.36E+11,"236,000,000,000",,2024-05-07,Open,1.00E+24,,0.789,,,0.785,,,,,,,,,,,,0,
-DeepSeek-Coder-V2,2.36E+11,"236,000,000,000",1.02E+13,2024-06-17,Open,1.28E+24,,0.839,,,0.792,,,,,,,,,,,,,
+DeepSeek-Coder-V2,2.36E+11,"236,000,000,000",1.02E+13,2024-06-17,Open,1.28E+24,,0.839,,,0.792,,,,,,,,,,,,0,
 Falcon 7B,7.00E+09,"7,000,000,000",1.50E+12,2023-03-15,Open,6.30E+22,,0.28,,,0.262,,,,,,,,,,,,0,
 Falcon 40B,4.00E+10,"40,000,000,000",1.50E+12,2023-03-15,Open,3.60E+23,,0.371,,,0.554,,,,,,,,,,,,0,
 Falcon 180B,1.80E+11,"180,000,000,000",3.50E+12,2023-09-06,Open,3.78E+24,,0.54,,,0.705,,,,,1033,chat,,,,,,-1,Chat model performs worse on GSM1k relative to GSM8k
@@ -41,12 +41,12 @@ Gemini 1.5 Pro (April 2024),,,,2024-04-09,Closed,,,,0.415,y,0.819,0.81,996,0.829
 Gemini 1.5 Pro (May 2024),,,,2024-05-14,Closed,,,0.892,0.462,y,0.859,0.827,1095,0.852,0.9228,1261,Gemini-1.5-Pro-API-0514,"""+3/-3""",3-shot,,001,,0,
 Gemini 1.5 Pro (Exp-0801),,,,2024-08-01,Closed,,,,,,,,,,,1300,,"""+6/-5""",,,,,0,
 Gemini Ultra,,,,2023-12-06,Closed,5.00E+25,,,,,0.8396,,,,,,,,,,,,0,
-Gemma 1 2B,2000000000,"2,000,000,000",,2024-04-09,Open,,,,,,0.423,,,,,,,,,,,,,
+Gemma 1 2B,2000000000,"2,000,000,000",,2024-04-09,Open,,,,,,0.423,,,,,,,,,,,,0,
 Gemma 2 27B,,"27,000,000,000",,2024-06-24,Open,2.10E+24,,0.749,0.39,unspecified (DMed them on twitter): https://artificialanalysis.ai/methodology,0.752,,,,,1218,gemma-2-27b-it,,,https://artificialanalysis.ai/models/gemma-2-27b,,,-1,
-Gopher 280B,,"280,000,000,000",,2021-12-08,Closed,6.31E+23,,,,,0.6,,,,,,,,,,,,,
+Gopher 280B,,"280,000,000,000",,2021-12-08,Closed,6.31E+23,,,,,0.6,,,,,,,,,,,,0,
 Gemma 2 9B,,"9,000,000,000",,2024-06-24,Open,4.32E+23,,0.682,,,0.713,,,,,1188,,,,,,,0,
-GLM 130B,130000000000,"130,000,000,000",,2022-10-05,Open,,,,,,0.448,,,,,,,,,,,,,
-Grok-1,,"78,500,000,000",,2023-11-03,Open,3.00E+24,slightly speculative but not too much - xAI says it's the the compute class of GPT-3.5,,,,0.73,,,,,,,,,,,,,
+GLM 130B,130000000000,"130,000,000,000",,2022-10-05,Open,,,,,,0.448,,,,,,,,,,,,0,
+Grok-1,,"78,500,000,000",,2023-11-03,Open,3.00E+24,slightly speculative but not too much - xAI says it's the the compute class of GPT-3.5,,,,0.73,,,,,,,,,,,,0,
 GPT-3.5-turbo-16k,,,,2023-06-13,Closed,2.60E+24,Assuming the same as our estimate for GPT-3.5,,0.281,y: https://x.com/idavidrein/status/1773518764249661634/photo/1,0.7,,,,,1117,,,,https://x.com/idavidrein/status/1773518764249661634,,,1,Doesn't perform worse on GSM1k relative to GSM8k
 GPT-4 (original),,"280,000,000,000",,2023-03-15,Closed,2.10E+25,,,,,0.864,,,,,1186,,,,,,,1,Doesn't perform worse on GSM1k relative to GSM8k
 gpt-4-0125-preview,,,,2024-01-25,Closed,2.10E+25,Assuming the same as original,,0.414,y: https://x.com/idavidrein/status/1773518764249661634/photo/1,0.854,,1146,0.876,0.951,1245,,,,gpt-4-0125-preview https://github.com/openai/simple-evals,,,-1,MMLU-GPQA performance difference is relatively large
@@ -57,7 +57,7 @@ GPT-4o mini,,,,2024-07-18,Closed,,,,0.402,y,0.82,,,,,1280,2024-07-18,"""+6/-4"""
 GPT-NeoX 20B,20000000000,"20,000,000,000",4.73E+11,2022-02-09,Open,5.67E+22,,0.4025,,,0.336,,,,,,,,,,,,0,
 Inflection-2,,,,2023-11-22,Closed,1.00E+25,,,,,0.796,,,,,,,,,,,,0,
 Inflection-2.5,,,,2024-03-07,Closed,1.00E+25,"""Inflection-1 used approximately 4% the training FLOPs of GPT-4 and, on average, performed at approximately 72% GPT-4 level on a diverse range of IQ-oriented tasks. Inflection-2.5, now powering Pi, achieves more than 94% the average performance of GPT-4 despite using only 40% the training FLOPs."" This is a weird one - we estimated GPT-4 at 2.1e25 FLOP (which could be off somewhat, or Inflection could believe a different number). 40% of that is ~8e24. But Inflection 2, the previous model, was trained on ~1e25 FLOP per Inflection. Inflection-2.5 also does better on benchmarks than 2. Intuitively Inflection-2.5 would be trained on appreciably more compute. 1e25 seems like a rough, perhaps conservative guess given all this.",,0.384,y,0.796,,,,,,,,,Not clear that this is zero-shot CoT.,Inflection-2 result for few-shot no-CoT.,,0,
-Jamba 1.5 Large,,"94,000,000,000",,2024-08-22,Open,,probably 24 scale. 2T tokens would be 1.1e24 FLOP,,0.369,unspecified,0.8,,,,,,,,,https://docs.ai21.com/docs/jamba-15-models#performance-and-benchmarks,,,,
+Jamba 1.5 Large,,"94,000,000,000",,2024-08-22,Open,,probably 24 scale. 2T tokens would be 1.1e24 FLOP,,0.369,unspecified,0.8,,,,,,,,,https://docs.ai21.com/docs/jamba-15-models#performance-and-benchmarks,,,0,
 Llama 3 70B,,"70,000,000,000",,2024-04-18,Open,6.30E+24,,0.655,0.413,"n, main",0.82,,981,0.855,0.9012,1206,instruct,,,,,,1,Doesn't perform worse on GSM1k relative to GSM8k
 Llama 3 8B,,"8,000,000,000",,2024-04-18,Open,7.20E+23,,,0.342,"n, main",0.684,,,,,1152,instruct,,,,,,-1,Performs worse on GSM1k relative to GSM8k
 Llama 3.1 70B,,"70,000,000,000",,2024-07-23,Open,6.30E+24,"Sounds like all models were trained on 15T tokens: ""All the results presented in this paper are for the Llama 3.1 models, which we will refer to as Llama 3 throughout for brevity. [...] We pre-train Llama 3 on a corpus of about 15T multilingual tokens, compared to 1.8T tokens for Llama 2."" 6 * 70e9 * 15e12 = 6.3e24 FLOP.",,0.467,y (probably),0.836,0.801,,,,1243,,,,,,Instruct Turbo,0,
@@ -86,8 +86,8 @@ PaLM 9B,8.63E+09,"8,630,000,000",7.80E+11,2022-04-04,Closed,4.04E+22,,0.308,,,0.
 PaLM 63B,6.25E+10,"62,500,000,000",7.80E+11,2022-04-04,Closed,2.93E+23,,0.374,,,0.551,,,,,,,,,,,,0,
 PaLM 540B,5.40E+11,"540,000,000,000",7.80E+11,2022-04-04,Closed,2.53E+24,,0.491,,,0.713,,,,,,,,,,,,0,
 PaLM-2,3.40E+11,"340,000,000,000",3.60E+12,2023-05-10,Closed,7.34E+24,,0.624,,,0.783,,,,,,,,,,,,0,
-Qwen 7B,,"7,000,000,000",,2023-09-28,Open,,,,,,0.567,,,,,,,,,,,,,
-Qwen2idae-16x14B,,"15,000,000,000",,2024-01-05,Open,,,,,,0.667,,,,,,,,,,,,,
+Qwen 7B,,"7,000,000,000",,2023-09-28,Open,,,,,,0.567,,,,,,,,,,,,0,
+Qwen2idae-16x14B,,"15,000,000,000",,2024-01-05,Open,,,,,,0.667,,,,,,,,,,,,0,
 Qwen2-72B,,"72,000,000,000",,2024-06-06,Open,3.00E+24,,0.824,0.39,y (presume we used diamond),0.842,0.824,,,,1187,instruct,,,Epoch evaluation. Instruct version.,,Instruct,-1,MMLU-GPQA performance difference is relatively large
 Reka Core,,,,2024-04-15,Closed,8.40E+24,Rough guess from hardware.,,0.382,"n, main: https://publications.reka.ai/reka-core-tech-report.pdf",0.832,,,,,1199,20240501,,,,,,-1,MMLU-GPQA performance difference is relatively large
 StableLM-3B-4E1T,3.00E+09,"3,000,000,000",4.00E+12,2023-09-29,Open,7.20E+22,,,,,0.4523,,,,,,,,,,,,0,
