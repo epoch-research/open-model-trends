@@ -1,33 +1,65 @@
 import numpy as np
 import pandas as pd
 import statsmodels.api as sm
+import statsmodels.formula.api as smf
 from scipy import stats
 
 from utils import *
 
 
 def fit_ols_regression(data, features, target, logy=False):
-    data = data.dropna(subset=features + [target])
-    X = data[features].to_numpy()
-    y = data[target].to_numpy()
+    """
+    Fits an OLS regression model using the formula API, automatically handling feature names and constant features.
 
+    Parameters:
+    - data (pd.DataFrame): The input data containing features and target.
+    - features (list of str): List of feature column names.
+    - target (str): The target column name.
+    - logy (bool): Whether to apply logarithmic transformation to the target.
+
+    Returns:
+    - results (RegressionResultsWrapper): The fitted OLS model.
+    """
+    # Drop rows with missing values in features or target
+    data = data.dropna(subset=features + [target])
+
+    # Apply log transformation to the target if specified
     if logy:
-        y = np.log10(y)
-    
-    X = sm.add_constant(X)  # Add a constant term to the features
-    
-    model = sm.OLS(y, X)
-    results = model.fit()
-    
-    return results
+        data[target] = np.log10(data[target])
+
+    # Construct the formula for the model
+    formula = f"{target} ~ " + " + ".join(features)
+
+    # Fit the OLS model using the formula API
+    model = smf.ols(formula=formula, data=data).fit()
+
+    return model
 
 
 def get_predictions(model, data, features):
-    X = data[features].to_numpy()
-    if X.size == 0:
-        return np.array([])
-    X = sm.add_constant(X, has_constant='add')
-    return model.predict(X)
+    """
+    Generates predictions using the fitted OLS model.
+
+    Parameters:
+    - model (RegressionResultsWrapper): The fitted OLS model.
+    - data (pd.DataFrame): The input data for prediction. Must include all features used in the model.
+
+    Returns:
+    - predictions (np.ndarray): The predicted values.
+    """
+    # Extract the feature names used in the model from the formula
+    # Exclude the intercept (the first parameter)
+    model_features = model.params.index[1:]
+    
+    # Identify missing features in the prediction data
+    missing_features = set(model_features) - set(data.columns)
+    if missing_features:
+        raise ValueError(f"The following required features are missing from the prediction data: {missing_features}")
+
+    # Make predictions
+    predictions = model.predict(data)
+
+    return predictions.to_numpy()
 
 
 def get_prediction_df(model, data, features):
