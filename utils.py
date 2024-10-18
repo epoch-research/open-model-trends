@@ -4,7 +4,12 @@ from scipy import stats
 
 
 def datetime_to_float_year(datetimes):
-    date_floats = datetimes.dt.year + (datetimes.dt.month-1) / 12 + (datetimes.dt.day-1) / 365.242374
+    if isinstance(datetimes, pd.Series):
+        date_floats = datetimes.dt.year + (datetimes.dt.month - 1) / 12 + (datetimes.dt.day - 1) / 365.242374
+    elif isinstance(datetimes, pd.DatetimeIndex):
+        date_floats = datetimes.year + (datetimes.month - 1) / 12 + (datetimes.day - 1) / 365.242374
+    else:
+        raise TypeError("Input must be a pandas Series or DatetimeIndex")
     return date_floats
 
 
