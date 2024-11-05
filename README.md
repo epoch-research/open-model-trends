@@ -1,4 +1,4 @@
-# Trends in open-source AI
+# Trends in open-weight vs. closed-weight AI models
 
 Code for the report ["How far behind are open models?"](https://epochai.org/blog/open-models-report)
 
