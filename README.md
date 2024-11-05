@@ -21,3 +21,6 @@ See the description of each parameter in the notebook for details.
 
 The raw data used for analysis is in the `data/` folder.
 `All ML Systems - full view.csv` is a snapshot of the Epoch AI database of models.
+`benchmarks_with_model_accessibility.csv` contains the benchmark data that we use, except for GSM1k, which is in `gsm1k_with_model_accessibility.csv`.
+
+Note that the plots produced by this code do not match the design of plots in the report, but the underlying data is the same.
