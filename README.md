@@ -1,6 +1,6 @@
 # Trends in open-source AI
 
-Code for the report "How far behind are open models?".
+Code for the report ["How far behind are open models?"](https://epochai.org/blog/open-models-report)
 
 You can install required packages using
 
