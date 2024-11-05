@@ -8,7 +8,7 @@ You can install required packages using
 pip install -r requirements.txt
 ```
 
-Results from the paper can be reproduced by running the following notebooks:
+Results from the report can be reproduced by running the following notebooks:
 
 - `benchmark_analysis.ipynb` for the analysis of benchmark performance
 - `compute_analysis.ipynb` for the analysis of training compute trends
